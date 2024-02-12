@@ -9,7 +9,8 @@
     "start": "node index.js",
     "lint": "eslint . --fix",
     "format": "prettier --write .",
-    "test": "jest"
+    "test": "jest ",
+    "test:watch": "jest --watch --detectOpenHandles"
   },
   "keywords": [],
   "author": "",
