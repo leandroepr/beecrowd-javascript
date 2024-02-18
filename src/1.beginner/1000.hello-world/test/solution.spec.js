@@ -1,13 +1,13 @@
-const Solution = require('../../../solution/solution');
+const Solution = require('../../../core/solution');
 
 const solutions = [
   {
     name: 'main',
-    path: '1.beginner/1000.hello-world/solutions/main.js',
+    path: require.resolve('../solutions/main'),
   },
   {
-    name: 'poo-solution',
-    path: '1.beginner/1000.hello-world/solutions/poo-solution.js',
+    name: 'object oriented programming',
+    path: require.resolve('../solutions/poo'),
   },
 ];
 
@@ -19,7 +19,10 @@ const sample = {
 describe('beecrowd 1000 | Hello World!', () => {
   solutions.forEach((solutionData) => {
     it(`should test the solution: ${solutionData.name}`, () => {
-      const solution = new Solution(solutionData.path);
+      const solution = new Solution({
+        solutionPath: solutionData.path,
+        timeout: 1000,
+      });
       const output = solution.execute(sample.input);
       expect(output).toBe(sample.output);
     });
