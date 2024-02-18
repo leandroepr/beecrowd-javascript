@@ -39,9 +39,9 @@ You must print the message Hello World! and then the endline as shown below.
    
 
     img[src*='#center'] {
-        display:block;
-        float:none;
-        margin-left:auto;
-        margin-right:auto;
+        display: block;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
     }
 </style>
