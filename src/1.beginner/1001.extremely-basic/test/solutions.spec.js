@@ -5,6 +5,10 @@ const solutions = [
     name: 'main',
     path: require.resolve('../solutions/main'),
   },
+  {
+    name: 'Object Oriented Programming (OOP)',
+    path: require.resolve('../solutions/oop'),
+  },
 ];
 
 const samples = [
