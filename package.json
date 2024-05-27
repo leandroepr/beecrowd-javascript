@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "commonjs",
   "module": "commonjs",
-  "description": "",
+  "description": "Beecrowd JavaScript Challenges Solutions",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -13,10 +13,10 @@
     "test:watch": "jest --watch --detectOpenHandles"
   },
   "keywords": [],
-  "author": "",
+  "author": "Leandro Reis <leandro.e.reis@gmail.com>",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^8.56.0",
+    "eslint": "^8.57.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.1",
