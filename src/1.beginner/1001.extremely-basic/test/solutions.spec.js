@@ -9,6 +9,10 @@ const solutions = [
     name: 'Object Oriented Programming (OOP)',
     path: require.resolve('../solutions/oop'),
   },
+  {
+    name: 'Functional Programming (FP)',
+    path: require.resolve('../solutions/fp'),
+  },
 ];
 
 const samples = [
