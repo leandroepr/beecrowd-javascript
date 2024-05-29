@@ -13,6 +13,10 @@ const solutions = [
     name: 'Functional Programming (FP)',
     path: require.resolve('../solutions/fp'),
   },
+  {
+    name: 'Hexagonal Architecture',
+    path: require.resolve('../solutions/hexagonal'),
+  },
 ];
 
 const samples = [
