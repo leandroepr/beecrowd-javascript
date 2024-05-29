@@ -1,7 +1,15 @@
 const input = require('fs').readFileSync('/dev/stdin', 'utf8');
 
-const pairNumberFromInput = (text) => text.split('\n').map(Number).slice(0, 2);
-const sum = (a, b) => a + b;
-const formatAnswer = (x) => `X = ${x}`;
+const lines = input.split('\n');
 
-console.log(formatAnswer(sum(...pairNumberFromInput(input))));
+function compose(...functions) {
+  return (input) => functions.reduce((acc, fn) => fn(acc), input);
+}
+
+const parseNumbers = (lines) => lines.filter(Boolean).map(Number);
+const calculateSum = (numbers) => numbers.reduce((acc, cur) => acc + cur, 0);
+const formatResult = (x) => `X = ${x}`;
+
+const solution = compose(parseNumbers, calculateSum, formatResult);
+
+console.log(solution(lines));
