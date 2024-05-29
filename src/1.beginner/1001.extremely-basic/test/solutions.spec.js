@@ -17,6 +17,10 @@ const solutions = [
     name: 'Hexagonal Architecture',
     path: require.resolve('../solutions/hexagonal'),
   },
+  {
+    name: 'Clean Architecture',
+    path: require.resolve('../solutions/clean'),
+  },
 ];
 
 const samples = [
